@@ -81,7 +81,7 @@ longpause_timer.addEventListener('secondsUpdated', function (e) {
 focus_timer.addEventListener('targetAchieved', function (e) {
     $('#FocusTimer .progress_bar').html('COMPLETE!!');
     COUNTER++
-    new Audio("http://127.0.0.1:8080/audio/zapsplat_bells_small_timer_ping_constant_loop_58348.mp3").play()
+    new Audio("http://pomolofi.servehttp.com/audio/zapsplat_bells_small_timer_ping_constant_loop_58348.mp3").play()
     if(COUNTER < 4){
         document.getElementById("pause").click();
         pause_timer.start({countdown: true, precision: 'seconds', startValues: {minutes: PAUSE}});
@@ -93,14 +93,14 @@ focus_timer.addEventListener('targetAchieved', function (e) {
 });
 
 pause_timer.addEventListener('targetAchieved', function (e) {
-    new Audio("http://127.0.0.1:8080/audio/zapsplat_bells_small_timer_ping_constant_loop_58348.mp3").play()
+    new Audio("http://pomolofi.servehttp.com/audio/zapsplat_bells_small_timer_ping_constant_loop_58348.mp3").play()
     $('#PauseTimer .progress_bar').html('COMPLETE!!');
     document.getElementById("focus").click();
     focus_timer.start({countdown: true, precision: 'seconds', startValues: {minutes: TIMER}});
 });
 
 longpause_timer.addEventListener('targetAchieved', function (e) {
-    new Audio("http://127.0.0.1:8080/audio/zapsplat_bells_small_timer_ping_constant_loop_58348.mp3").play()
+    new Audio("http://pomolofi.servehttp.com/audio/zapsplat_bells_small_timer_ping_constant_loop_58348.mp3").play()
     $('#LongPauseTimer .progress_bar').html('COMPLETE!!');
     document.getElementById("focus").click();
     focus_timer.start({countdown: true, precision: 'seconds', startValues: {minutes: TIMER}});
