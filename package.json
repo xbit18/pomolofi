@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "easytimer.js": "^4.5.3",
+    "fluent-ffmpeg": "^2.1.2",
+    "node-static": "^0.7.11",
+    "path": "^0.12.7",
+    "youtube-audio-server": "^2.8.2",
+    "youtube-audio-stream": "^0.3.55",
+    "ytdl-core": "^4.11.0"
+  }
+}
