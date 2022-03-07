@@ -20,7 +20,7 @@ const send = (source, destination, status = 200, headers = header) => {
   
 
   try {
-    http.createServer(demo).listen(8080)
+    http.createServer(demo).listen(80)
     function demo (req, res) {
         const url = req.url;
         if (url === '/') {
