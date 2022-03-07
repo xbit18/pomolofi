@@ -22,6 +22,7 @@ const send = (source, destination, status = 200, headers = header) => {
   try {
     http.createServer(demo).listen(80, "0.0.0.0")
     function demo (req, res) {
+      console.log("received");
         const url = req.url;
         if (url === '/') {
             return fs.createReadStream(path.join(__dirname, './templates/pomodoro.html')).pipe(res)
