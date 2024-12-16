@@ -1,0 +1,61 @@
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: center;
+    transition-property: background-color;
+    transition: linear 0.1s;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    font-weight: bold;
+}
+
+header div{
+    height: 100%;
+    width: 33.333vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.focusBg{
+    background-color: rgb(255, 37, 37);
+} 
+
+.pauseBg{
+    background-color: rgb(72, 195, 72);
+}
+
+.longpauseBg{
+    background-color: rgb(65, 123, 231);
+}
+
+header > div {
+    transition: linear 0.1s;
+    transition-property: border-radius;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+    .home{
+        flex-direction: column;
+        gap: 20px;
+    }
+}

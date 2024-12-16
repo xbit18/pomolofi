@@ -1,0 +1,57 @@
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timerButtons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#timerValues {
+    font-size: 3rem;
+    background-color: #ffffff57;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button{
+    padding: 12px;
+    margin: 5px;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.start {
+    background-color: #35de92;
+    color: black;
+}
+
+.pause {
+    background-color: #ffd900;
+    color: black;
+}
+
+.stop {
+    background-color: #d61717;
+}
+
+.reset {
+    background-color: #2591d9;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    transition: linear 0.1s;
+}
+
+p {
+    font-size: 1.5rem;
+}

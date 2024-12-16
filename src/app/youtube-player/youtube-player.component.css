@@ -1,0 +1,70 @@
+:host ::ng-deep youtube-player iframe {
+    display: flex;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+@media screen and (max-width: 600px) {
+    :host ::ng-deep youtube-player iframe {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+.setNewVideo{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 10px;
+    height: 40px;
+}
+
+.setNewVideo > input{
+    background: rgba(255, 255, 255, 0.3);
+    /* outline: 1px ;
+    outline-color: #0000002e;
+    outline-style: solid; */
+    border-radius: 10px;
+    border: 0px;
+    flex-grow: 6;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+.setNewVideo > input:focus{
+    outline: 2px ;
+    outline-color: #0000002e;
+    outline-style: solid;
+}
+
+.setNewVideo > input::placeholder{
+    color: rgb(128, 128, 128);
+}
+
+.setNewVideo > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.youtubeSubmit{
+    display: flex;
+    gap: 10px;
+    background: #0000002e;
+}
+
+.hiddenSpinner {
+    display: none;
+}
+
+.spinner {
+    display: inline;
+}
+
